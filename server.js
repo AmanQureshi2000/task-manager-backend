@@ -5,14 +5,6 @@ const jwt = require('jsonwebtoken');
 const { Pool } = require('pg');
 require('dotenv').config();
 
-// Debug: Check if environment variables are loaded
-console.log('DB_USER:', process.env.DB_USER);
-console.log('DB_HOST:', process.env.DB_HOST);
-console.log('DB_NAME:', process.env.DB_NAME);
-console.log('DB_PASSWORD:', process.env.DB_PASSWORD ? '*** (set)' : 'NOT SET');
-console.log('DB_PORT:', process.env.DB_PORT);
-console.log('JWT_SECRET:', process.env.JWT_SECRET ? '*** (set)' : 'NOT SET');
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
